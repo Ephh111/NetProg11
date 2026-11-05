@@ -40,7 +40,7 @@ int main(int argc, char* argv[]) {
 
     while (true) {
         std::cout << "> " << std::flush;
-        if (!std::cin.getline(msg, sizeof(msg))) break;   // Ctrl+D / EOF
+        if (!std::cin.getline(msg, sizeof(msg))) break;
         if (std::strcmp(msg, "quit") == 0) break;
 
         std::strcat(msg, "\n");
